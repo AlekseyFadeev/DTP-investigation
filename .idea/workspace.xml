@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99c5bafb-6e2c-4ee5-8677-3a82dedfe174" name="Default Changelist" comment="" />
+    <list default="true" id="99c5bafb-6e2c-4ee5-8677-3a82dedfe174" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_preparation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_preparation.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,25 +100,34 @@
       <workItem from="1589440593284" duration="623000" />
       <workItem from="1589529412522" duration="607000" />
       <workItem from="1589603498917" duration="12715000" />
-      <workItem from="1589620431140" duration="278000" />
+      <workItem from="1589620431140" duration="1588000" />
     </task>
+    <task id="LOCAL-00001" summary="Project initial commit">
+      <created>1589620766342</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589620766342</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Project initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project initial commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="211" width="1084" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589211109694">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state x="418" y="211" width="1084" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1589211109694" />
-    <state x="575" y="149" width="770" height="796" key="CommitChangelistDialog2" timestamp="1589620392497">
+    <state x="575" y="149" width="770" height="796" key="CommitChangelistDialog2" timestamp="1589620766204">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="575" y="149" width="770" height="796" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1589620392497" />
+    <state x="575" y="149" width="770" height="796" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1589620766204" />
     <state x="743" y="320" width="426" height="479" key="FileChooserDialogImpl" timestamp="1589620282350">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
@@ -152,10 +164,10 @@
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
     <state width="1864" height="344" key="GridCell.Tab.1.right/0.25.1920.1055@0.25.1920.1055" timestamp="1589229967758" />
-    <state x="559" y="286" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1589620536259">
+    <state x="559" y="286" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1589620777457">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="559" y="286" width="802" height="523" key="Vcs.Push.Dialog.v2/0.25.1920.1055@0.25.1920.1055" timestamp="1589620536259" />
+    <state x="559" y="286" width="802" height="523" key="Vcs.Push.Dialog.v2/0.25.1920.1055@0.25.1920.1055" timestamp="1589620777457" />
     <state x="108" y="125" width="1712" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589620303319">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>

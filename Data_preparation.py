@@ -5,12 +5,12 @@
 
 import pandas as pd
 from datetime import datetime
-from Methodology import COST_FUNCTION, LETAL_COEFF, MIN_DTP_AMOUNT, THRESHHOLD
+from Methodology import LETAL_COEFF
 from Utils import *
 
 
 def get_data(columns=[],
-             path='/home/gordon/Downloads/dtp.json'):
+             path='/dtp.json'):
     """
     :param columns: поля, которые мы хотим оставить из json файла (если не указано - то оставляем все)
     :param path: путь к json файлу с данными
