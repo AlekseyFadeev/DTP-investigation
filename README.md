@@ -13,7 +13,7 @@ from Data_preparation import get_data, prepare_data
 from Tree_query import Tree  
 
 # Чтение и подготовка данных  
-df = get_data()  
+df = get_data('/dtp.json')  
 df = prepare_data(df)  
 
 # Создание структуры данных для быстрого поиска  
