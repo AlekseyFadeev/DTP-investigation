@@ -9,30 +9,30 @@
 
 **Пример использования:**
 
-from Data_preparation import get_data, prepare_data
-from Tree_query import Tree
+from Data_preparation import get_data, prepare_data  
+from Tree_query import Tree  
 
-# Чтение и подготовка данных
-df = get_data()
-df = prepare_data(df)
+# Чтение и подготовка данных  
+df = get_data()  
+df = prepare_data(df)  
 
-# Создание структуры данных для быстрого поиска
-TREE = Tree(df, center_coords=(55.74750182149156, 37.62439727783203))
-TREE.create_tree()
+# Создание структуры данных для быстрого поиска  
+TREE = Tree(df, center_coords=(55.74750182149156, 37.62439727783203))  
+TREE.create_tree()  
 
 
-# Пример запроса для целой области с последующей выгрузкой данных
+# Пример запроса для целой области с последующей выгрузкой данных  
 
-c_min = (55.59464342691198, 37.341156005859375)  # Левый нижний угол ограничивающего область прямоугольника
-c_max = (55.910733545723346, 37.860260009765625)  # Правый верхний угол ограничивающего область прямоугольника
+c_min = (55.59464342691198, 37.341156005859375)  # Левый нижний угол ограничивающего область прямоугольника  
+c_max = (55.910733545723346, 37.860260009765625)  # Правый верхний угол ограничивающего область прямоугольника  
 
-TREE.query_for_region(coords_min=c_min,
-                      coords_max=c_max,
-                      grid_step = 100,
-                      save_path='/Moscow_heatmap_100m.geojson')
+TREE.query_for_region(coords_min=c_min,  
+                      coords_max=c_max,  
+                      grid_step = 100,  
+                      save_path='/Moscow_heatmap_100m.geojson')  
                       
-# Пример простого запроса: по произвольной точке вычисляется score:
-score = TREE.query_for_point(point=(55.59464342691198, 37.341156005859375))
+# Пример простого запроса: по произвольной точке вычисляется score:  
+score = TREE.query_for_point(point=(55.59464342691198, 37.341156005859375))  
                       
 
                                
