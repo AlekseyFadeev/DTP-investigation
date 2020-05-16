@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="99c5bafb-6e2c-4ee5-8677-3a82dedfe174" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bldgsWOEXeaAdvC6V9eFg8M4OC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/DigDes/Projects/Platform/platform" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="DTP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/Projects/GPU/gpu_env/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="playground" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="DTP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/Projects/GPU/gpu_env/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/playground.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99c5bafb-6e2c-4ee5-8677-3a82dedfe174" name="Default Changelist" comment="" />
+      <created>1589210728301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589210728301</updated>
+      <workItem from="1589210729558" duration="1161000" />
+      <workItem from="1589212036663" duration="3385000" />
+      <workItem from="1589269912432" duration="632000" />
+      <workItem from="1589320081606" duration="607000" />
+      <workItem from="1589440593284" duration="623000" />
+      <workItem from="1589529412522" duration="607000" />
+      <workItem from="1589603498917" duration="12715000" />
+      <workItem from="1589620431140" duration="278000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="211" width="1084" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589211109694">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="418" y="211" width="1084" height="702" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1589211109694" />
+    <state x="575" y="149" width="770" height="796" key="CommitChangelistDialog2" timestamp="1589620392497">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="575" y="149" width="770" height="796" key="CommitChangelistDialog2/0.25.1920.1055@0.25.1920.1055" timestamp="1589620392497" />
+    <state x="743" y="320" width="426" height="479" key="FileChooserDialogImpl" timestamp="1589620282350">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="743" y="320" width="426" height="479" key="FileChooserDialogImpl/0.25.1920.1055@0.25.1920.1055" timestamp="1589620282350" />
+    <state width="1864" height="344" key="GridCell.Tab.0.bottom" timestamp="1589229967757">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1864" height="344" key="GridCell.Tab.0.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1589229967757" />
+    <state width="1864" height="344" key="GridCell.Tab.0.center" timestamp="1589229967756">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1864" height="344" key="GridCell.Tab.0.center/0.25.1920.1055@0.25.1920.1055" timestamp="1589229967756" />
+    <state width="1864" height="344" key="GridCell.Tab.0.left" timestamp="1589229967756">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1864" height="344" key="GridCell.Tab.0.left/0.25.1920.1055@0.25.1920.1055" timestamp="1589229967756" />
+    <state width="1864" height="344" key="GridCell.Tab.0.right" timestamp="1589229967756">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1864" height="344" key="GridCell.Tab.0.right/0.25.1920.1055@0.25.1920.1055" timestamp="1589229967756" />
+    <state width="1864" height="344" key="GridCell.Tab.1.bottom" timestamp="1589229967758">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1864" height="344" key="GridCell.Tab.1.bottom/0.25.1920.1055@0.25.1920.1055" timestamp="1589229967758" />
+    <state width="1864" height="344" key="GridCell.Tab.1.center" timestamp="1589229967758">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1864" height="344" key="GridCell.Tab.1.center/0.25.1920.1055@0.25.1920.1055" timestamp="1589229967758" />
+    <state width="1864" height="344" key="GridCell.Tab.1.left" timestamp="1589229967757">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1864" height="344" key="GridCell.Tab.1.left/0.25.1920.1055@0.25.1920.1055" timestamp="1589229967757" />
+    <state width="1864" height="344" key="GridCell.Tab.1.right" timestamp="1589229967758">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state width="1864" height="344" key="GridCell.Tab.1.right/0.25.1920.1055@0.25.1920.1055" timestamp="1589229967758" />
+    <state x="559" y="286" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1589620536259">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="559" y="286" width="802" height="523" key="Vcs.Push.Dialog.v2/0.25.1920.1055@0.25.1920.1055" timestamp="1589620536259" />
+    <state x="108" y="125" width="1712" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589620303319">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="108" y="125" width="1712" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1589620303319" />
+    <state x="769" y="470" width="382" height="155" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589619448247">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="769" y="470" width="382" height="155" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.1055@0.25.1920.1055" timestamp="1589619448247" />
+    <state x="771" y="447" width="377" height="201" key="git4idea.ui.GitResetDialog" timestamp="1589619676134">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="771" y="447" width="377" height="201" key="git4idea.ui.GitResetDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1589619676134" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DTP$playground.coverage" NAME="playground Coverage Results" MODIFIED="1589212422061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
