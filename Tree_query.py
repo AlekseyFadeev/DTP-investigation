@@ -7,8 +7,10 @@ import numpy as np
 from scipy.spatial import cKDTree
 from typing import Tuple, Optional, List
 from Methodology import DISTANCE_RADIUS
-from Utils import to_meters, to_degrees
+from Utils import to_meters, to_degrees, to_degrees_shapely, to_meters_shapely
 from tqdm import tqdm
+from shapely.geometry import Point as Point_shapely
+from shapely.geometry import Polygon
 
 from geojson import Feature, Point, FeatureCollection, dump
 
@@ -32,7 +34,7 @@ class Tree:
         else:
             self.center = tuple(np.mean(self.coords, axis=0))
 
-        self.coords_m = to_meters(self.coords, self.center)  # массив координат в метрах
+        self.coords_m, _ = to_meters(self.coords, self.center)  # массив координат в метрах
 
     def create_tree(self):
         """
@@ -61,7 +63,7 @@ class Tree:
         из self.dataframe
         """
 
-        point_m = to_meters(np.asarray(point), self.center)
+        point_m, _ = to_meters(np.asarray(point), self.center)
         indices = self.restrict_distance(np.asarray(self.tree.query(point_m, k=self.k_neighbors)).astype(int))
 
         score = np.sum(self.scores[indices])
@@ -82,8 +84,8 @@ class Tree:
         :return: heatmap - матрица, заполненная значениями score для каждой точки сетки
         """
 
-        c_min = to_meters(np.asarray(coords_min), self.center)
-        c_max = to_meters(np.asarray(coords_max), self.center)
+        c_min, _ = to_meters(np.asarray(coords_min), self.center)
+        c_max, _ = to_meters(np.asarray(coords_max), self.center)
 
         X = np.arange(c_min[0], c_max[0], grid_step).astype(int)
         Y = np.arange(c_min[1], c_max[1], grid_step).astype(int)
@@ -119,3 +121,48 @@ class Tree:
                 dump(json_output, file)
 
         return heat_map
+
+    def query_for_region_2(self,
+                         coords_min: Tuple[float, float],
+                         coords_max: Tuple[float, float],
+                         save_path: Optional[str] = None) -> np.ndarray:
+        """
+        Вторая версия методики визуализации очагов (23.05.2020):
+        Для заданного bounding-box`а фильтруется data frame для выявления подходящих координат ДТП,
+        затем, если в окрестности каждой точки есть как минимум 5 других ДТП, создаётся окружность радиуса 200 метров
+        вокруг точки. На выходе получается geojson файл с объединением таких окружностей
+        """
+        c_min = coords_min
+        c_max = coords_max
+        points = self.dataframe[['Lat', 'Lon']]
+        lat = points['Lat']
+        lon = points['Lon']
+        filtered_points = points[(lat >= c_min[0]) & (lat <= c_max[0]) & (lon >= c_min[1]) & (lon <= c_max[1])]
+        filtered_points = filtered_points.values
+        filtered_points_m, cos_theta = to_meters(filtered_points, self.center)
+
+        result_circles = []
+
+        #return filtered_points_m
+
+        for point in filtered_points_m:
+            num_neighbors = len(self.tree.query_ball_point(point, self.radius))
+            if num_neighbors >= 5:
+
+                reversed_point = Point_shapely(point[1], point[0])
+                circle_m = reversed_point.buffer(self.radius)
+                circle = to_degrees_shapely(circle_m, cos_theta, reversed=True)
+
+                #circle_m = Point_shapely(point).buffer(self.radius)
+                #circle = to_degrees_shapely(circle_m, cos_theta)
+                #circle = Polygon([[y, x] for x, y in zip(*circle.exterior.xy)])
+
+                circle_json = Feature(geometry=circle,
+                                      properties={'Количество ДТП в радиусе': num_neighbors})
+
+                result_circles.append(circle_json)
+
+        json_output = FeatureCollection(result_circles)
+
+        with open(save_path, 'w') as file:
+            dump(json_output, file)

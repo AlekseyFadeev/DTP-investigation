@@ -2,8 +2,11 @@
 Модуль со вспомогательными функциями
 """
 import numpy as np
-from typing import Dict
+from typing import Dict, List, Tuple
 from Methodology import DEFAULT_VALUE, COST_FUNCTION
+from shapely.geometry import Point
+from shapely.geometry.base import BaseGeometry
+from shapely import affinity
 
 TO_RADIANS = np.pi / 180.  # degrees to radians
 
@@ -64,12 +67,12 @@ def to_meters(coords, center_coords):
     """
 
     x_center, y_center = center_coords
-    cos_theta = np.cos(x_center * np.pi / 180.)
+    cos_theta = np.cos(y_center * np.pi / 180.)
 
     xfact = cos_theta * EARTH_METRICS_DIAGONAL_SR
     yfact = EARTH_METRICS_DIAGONAL_SR
 
-    return coords * np.array([xfact, yfact])
+    return coords * np.array([xfact, yfact]), cos_theta
 
 
 def to_degrees(coords, center_coords):
@@ -87,3 +90,39 @@ def to_degrees(coords, center_coords):
 
 def distance(point1, point2):
     return np.sqrt(np.sum((point2 - point1) ** 2))
+
+def to_meters_shapely(geom: BaseGeometry, cos: float or None = None) -> Tuple[BaseGeometry, float] or BaseGeometry:
+    """
+    Преобразование координат к метрам.
+    """
+
+    cos_ = cos or np.cos(geom.centroid.y * np.pi / 180)
+    geom = affinity.scale(geom,
+                          xfact=cos_ * np.pi * AVG_EARTH_RADIUS / 180,
+                          yfact=np.pi * AVG_EARTH_RADIUS / 180,
+                          origin=Point(0, 0))
+
+    if cos is None:
+        return geom, cos_
+    else:
+        return geom
+
+
+def to_degrees_shapely(geom: BaseGeometry, cos: float, reversed: bool = False) -> BaseGeometry:
+
+    """
+    Преобразование координат в градусы (4326)
+
+    """
+    if not reversed:
+        geom = affinity.scale(geom,
+                              xfact=180 / (cos * np.pi * AVG_EARTH_RADIUS),
+                              yfact=180 / (np.pi * AVG_EARTH_RADIUS),
+                              origin=Point(0, 0))
+    else:
+        geom = affinity.scale(geom,
+                              xfact=180 / (np.pi * AVG_EARTH_RADIUS),
+                              yfact=180 / (cos * np.pi * AVG_EARTH_RADIUS),
+                              origin=Point(0, 0))
+
+    return geom
